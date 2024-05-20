@@ -2,14 +2,17 @@
 name = "python-conways-game-of-life"
 version = "0.1.0"
 description = ""
-authors = ["Maxiviper117 <davidgonsal@gmail.com>"]
+authors = ["Maxiviper117"]
 readme = "README.md"
+
+[tool.poetry.scripts]
+run-game = "python_conways_game_of_life.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 pygame = "^2.5.2"
 numpy = "^1.26.4"
-
+black = "^24.4.2"
 
 [build-system]
 requires = ["poetry-core"]
